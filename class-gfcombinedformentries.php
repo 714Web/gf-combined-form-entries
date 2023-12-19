@@ -127,7 +127,7 @@ class GFCombinedFormEntries extends GFAddOn {
 				<div class="container">
 					<div class="row">
 						<div class="col">
-							<p class="my-4 lead"><strong><?php echo count($results); ?> spam entries from all forms in the last 30 days</strong></p>
+							<p class="my-4 lead"><strong><?php echo count($results); ?> entries from all forms in the last 30 days</strong></p>
 						</div>
 					</div>
 				</div>
