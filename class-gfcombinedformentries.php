@@ -194,16 +194,5 @@ class GFCombinedFormEntries extends GFAddOn {
 	}
 
 
-	/**
-	 * Define dashicons
-	 * @since 0.1
-	 */
-	public function get_app_menu_icon() {
-		return $this->get_base_url() . '/img/gf-combinedformentries.svg';
-	}
-	public function get_menu_icon() {
-		return $this->get_base_url() . '/img/gf-combinedformentries.svg';
-	}
-
 
 }
