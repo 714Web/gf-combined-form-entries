@@ -1,9 +1,9 @@
 <?php
 /*
-Plugin Name: Gravity Forms Combined Form Entries
+Plugin Name: Gravity Forms Combined Form Entries Add-On
 Plugin URI: https://github.com/jeremycaris/gf-combined-form-entries
-Description: A Gravity Forms add-on to display all recent entries from all forms in one location.
-Version: 0.1
+Description: A Gravity Forms add-on to display all recent entries from all forms in one location: Forms > Entries - All Forms.
+Version: 0.11
 Author: Jeremy Caris
 Author URI: https://github.com/jeremycaris
 
@@ -24,7 +24,7 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
 */
 
-define( 'GF_COMBINEDFORMENTRIES_VERSION', '0.1' );
+define( 'GF_COMBINEDFORMENTRIES_VERSION', '0.11' );
 
 add_action( 'gform_loaded', array( 'GF_CombinedFormEntries_Bootstrap', 'load' ), 5 );
 
