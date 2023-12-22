@@ -172,9 +172,9 @@ class GFCombinedFormEntries extends GFAddOn {
 			<div id="universal-message-container">
 				<div class="container">
 					<div class="row">
-						<div class="col col-1">Entry ID<br>Date/Time</div>
+						<div class="col col-2">Entry ID<br>Date/Time</div>
 						<div class="col col-2"><br>Form Title</div>
-						<div class="col col-2"><br>Source URL</div>
+						<div class="col col-3"><br>Source URL</div>
 						<div class="col"><br>Other Submission Fields</div>
 					</div>
 				</div>
@@ -196,14 +196,14 @@ class GFCombinedFormEntries extends GFAddOn {
 			$form_title = $form['title'];
 			
 			$build = '<div class="row py-2 border border-0 border-top border-light-subtle">';
-			$build .= '<div class="col col-1">';
+			$build .= '<div class="col col-2">';
 			$build .= '<a href="'.$url.'" target="_blank" class="pe-2">'.$id.'</a><br>';
 			$build .= $date;
 			$build .= '</div>';
 			$build .= '<div class="col col-2"><strong>';
 			$build .= $form_title;
 			$build .= '</strong></div>';
-			$build .= '<div class="col col-2" style="overflow: hidden;">';
+			$build .= '<div class="col col-3" style="overflow: hidden;">';
 			$build .= '<a href="'.$source.'" target="_blank" class="pe-2">'.$source.'</a>';
 			$build .= '</div>';
 			
@@ -211,10 +211,14 @@ class GFCombinedFormEntries extends GFAddOn {
 			$extra = '';
 			foreach( $entry as $key=>$value ) {
 				if ( is_int( (int)$key ) && (int)$key !== 0 && !empty($value) ) {
-					if ( $i > 3 ) {
-						$extra = 'mt-2';
+					// if ( $i > 3 ) {
+						// $extra = 'mt-2';
+					// }
+					if ( strlen( $value ) > 100 ) {
+						$extra = 'col-12 mt-2';
 					}
 					$build .= '<div class="col '.$extra.'">';
+					// $build .= substr($value, 0, 200);
 					$build .= $value;
 					$build .= '</div>';
 					$i++;
