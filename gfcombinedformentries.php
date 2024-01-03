@@ -2,7 +2,7 @@
 /*
 Plugin Name: Gravity Forms Combined Form Entries Add-On
 Plugin URI: https://github.com/jeremycaris/gf-combined-form-entries
-Description: A Gravity Forms add-on to display all recent entries from all forms in one location: Forms > Entries - All Forms.
+Description: A Gravity Forms add-on to display all recent entries from all forms in one location.
 Version: 0.11
 Author: Jeremy Caris
 Author URI: https://github.com/jeremycaris

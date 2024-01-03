@@ -16,3 +16,27 @@ body {
 #universal-message-container sup {
     color: red;
 }
+.pagination > li > a,
+.page-link {
+    background-color: white;
+    color: #000;
+}
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover,
+.active>.page-link, 
+.page-link.active {
+    color: #000 !important;
+    background-color: #eee !important;
+    border-color: #ddd !important;
+}
+.pagination > .active > a {
+    color: white;
+    background-color: #000 !Important;
+    border: solid 1px #000 !Important;
+}
+.pagination > .active > a:hover {
+    background-color: #000 !Important;
+    border: solid 1px #000;
+}
