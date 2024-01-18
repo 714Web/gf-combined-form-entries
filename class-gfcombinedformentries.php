@@ -98,11 +98,15 @@ class GFCombinedFormEntries extends GFAddOn {
 	// # FRONTEND FUNCTIONS --------------------------------------------------------------------------------------------
 
 	public function get_all_form_entries() {
+		$pagenum = 1; // default page
+		if ( isset($_REQUEST['pagenum']) ) {
+			$pagenum = $_REQUEST['pagenum'];
+		}
 		$search_criteria = array();
 		$search_criteria['status'] = "active";
 		$form_id = 0;
 		$page_size = 20;
-		$current_page = max( 1, $_REQUEST['pagenum'] );
+		$current_page = max( 1, $pagenum );
 		$offset   = ($current_page - 1) * $page_size;
 		$sorting = array();
 		$paging = array( 'offset' => $offset, 'page_size' => $page_size ); 
