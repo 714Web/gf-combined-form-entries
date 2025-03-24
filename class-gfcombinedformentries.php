@@ -192,7 +192,7 @@ class GFCombinedFormEntries extends GFAddOn {
 		foreach ($results as $entry) {
 			$id = $entry['id'];
 			$form_id = $entry['form_id'];
-			$date = $entry['date_created'];
+			$date = get_date_from_gmt( $entry['date_updated'], 'Y-m-d h:i:s A' );
 			$source = $entry['source_url'];
 			$url = admin_url('admin.php?page=gf_entries&view=entry&id='.$form_id.'&lid='.$id);
 			

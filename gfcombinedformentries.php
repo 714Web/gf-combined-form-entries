@@ -3,7 +3,7 @@
 Plugin Name: Gravity Forms Combined Form Entries
 Plugin URI: https://github.com/jeremycaris/gf-combined-form-entries
 Description: A Gravity Forms add-on to display all recent entries from all forms in one location.
-Version: 0.11
+Version: 0.12
 Author: Jeremy Caris
 Author URI: https://github.com/jeremycaris
 
@@ -54,7 +54,7 @@ require 'inc/plugin-update-checker-5.3/plugin-update-checker.php';
 use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
 
 $myUpdateChecker = PucFactory::buildUpdateChecker(
-    'https://github.com/jeremycaris/gf-combined-form-entries/',
+    'https://github.com/714Web/gf-combined-form-entries/',
     __FILE__,
     'gf-combined-form-entries'
 );
